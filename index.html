@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ExploMonde</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+            name="description"
+            content="ExploMonde permet de rechercher des informations sur les pays du monde."
+    >
+
+    <title>ExploMonde - Recherche de pays</title>
 
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
-
 </head>
 
 <body>
@@ -29,35 +36,23 @@
     <section>
         <h2>Rechercher un pays</h2>
 
-        <label for="pays">Nom du pays</label>
-        <input type="text" id="pays" placeholder="Nom du pays">
-        <button>Rechercher</button>
+        <label for="recherche">Nom du pays :</label>
+
+        <input
+                type="text"
+                id="recherche"
+                placeholder="Exemple : France"
+        >
+
+        <button id="reessayer">Réessayer</button>
     </section>
 
-    <section role="status">
+    <section>
         <h2>Résultats</h2>
 
-        <article>
-            <h3>France</h3>
-            <p>Capitale : Paris</p>
-            <p>Région : Europe</p>
-            <p>Population : 68 millions</p>
-        </article>
+        <div id="statut" role="status"></div>
 
-        <article>
-            <h3>Japon</h3>
-            <p>Capitale : Tokyo</p>
-            <p>Région : Asie</p>
-            <p>Population : 124 millions</p>
-        </article>
-
-        <article>
-            <h3>Brésil</h3>
-            <p>Capitale : Brasilia</p>
-            <p>Région : Amérique</p>
-            <p>Population : 212 millions</p>
-        </article>
-
+        <div id="resultats"></div>
     </section>
 
 </main>
@@ -65,6 +60,8 @@
 <footer>
     <p>ExploMonde - 2026</p>
 </footer>
+
+<script type="module" src="js/main.js"></script>
 
 </body>
 </html>
