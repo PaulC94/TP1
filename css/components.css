@@ -1,0 +1,39 @@
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+    background: var(--bleu);
+    color: var(--blanc);
+    border: 0;
+    border-radius: var(--arrondi);
+}
+
+section[role="status"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--espace);
+}
+
+article {
+    background: var(--blanc);
+    padding: var(--espace);
+    border-radius: var(--arrondi);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --gris: #222222;
+        --blanc: #333333;
+        --noir: #ffffff;
+    }
+}

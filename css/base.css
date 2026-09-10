@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    background: var(--gris);
+    color: var(--noir);
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 50px);
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
